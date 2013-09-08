@@ -8,10 +8,12 @@ exports.create = function(model, dom){
   var el = d3.select(dom.element("container")),
     renderer = render()
       .updateItem(function(id, attrs){
-        if(!id){
-          model.at("room").add("items", attrs)
-        }else{
+        if(attrs && !id){
+          model.at("room").add("items", attrs);
+        }else if(attrs){
           model.at("room").setEach("items." + id, attrs);
+        }else if(id){
+          model.at("room.items").del(id);
         }
       });
 

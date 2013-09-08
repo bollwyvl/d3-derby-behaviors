@@ -110,8 +110,19 @@ module.exports = function(){
     item.enter()
       .append("g")
         .attr("class", "item")
+         .on("dblclick", function(d){
+           d3.event.stopImmediatePropagation();
+           d3.event.stopPropagation();
+           updateItem(d.key);
+         })
         .call(drag)
       .append("circle");
+      
+    item.exit()
+      .transition()
+        .style({opacity: 0})
+        .attr("r", 0)
+      .remove();
     
     var update = function(){
       var sx = zoom.scale();
