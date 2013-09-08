@@ -1,2 +1,11 @@
+<Title:>
+  {{title}} - {_page.room.name}
+
+<Header:>
+  <header>
+    <h1>{{title}} Pan/Zoom</h1>
+  </header>
+
 <Body:>
-  Bare
+  <!-- This is a component defined in the /ui directory -->
+  <ui:behaviors room={_page.room}>

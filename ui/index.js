@@ -1,7 +1,8 @@
 var config = {
-  filename: __filename
-, styles: '../styles/ui'
-, scripts: {
+  filename: __filename,
+  styles: ['./behaviors'],
+  scripts: {
+    behaviors: require('./behaviors')
   }
 };
 

@@ -15,7 +15,8 @@
     "redis": "~0.8.3",
     "livedb-mongo": "~0.2.0",
     "racer-browserchannel": "~0.1.0",
-    "connect-mongo": "~0.3.2"
+    "connect-mongo": "~0.3.2",
+    "d3": "~3.3.2"
   },
   "engines": {
     "node": "0.10.x"
