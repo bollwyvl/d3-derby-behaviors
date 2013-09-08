@@ -38,6 +38,9 @@ your needs.
 ## Styles
 - [/styles/app/index.styl](/styles/app/index.styl): base styles
 
+# License
+This code is made available as free software under the [MIT License](/LICENSE).
+
 [zoom]: http://bl.ocks.org/mbostock/3892919
 [d3]: http://d3js.com
 [derby]: http://derbyjs.com
