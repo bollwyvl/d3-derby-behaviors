@@ -71,6 +71,14 @@ module.exports = function(){
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+        .on("dblclick", function(){
+          d3.event.stopImmediatePropagation();
+          d3.event.stopPropagation();
+          updateItem(null, {
+            x: x.invert(d3.event.x - margin.left),
+            y: y.invert(d3.event.y - margin.top)
+          });
+        })
         .call(zoom);
 
       svg.append("rect")
