@@ -12,7 +12,9 @@ be found in the [general update pattern][gup] tutorials.
 # Dependencies
 To appease derby and racer, you'll need redis and MongoDB installed. If they 
 are both available locally on default ports, this app will work pretty much out 
-of the box.
+of the box. I was able to follow the instructions for
+[deploying to Heroku][heroku], but given the current security posture of this 
+app, this might not be A Good Idea.
 
 All other dependencies are handled by `npm`. Note that the derby stack is under 
 active development at this point, and this repo is just a demo... so it might 
@@ -56,3 +58,4 @@ This code is made available as free software under the [MIT License](/LICENSE).
 [derby]: http://derbyjs.com
 [behaviors]: https://github.com/mbostock/d3/wiki/Behaviors
 [gup]: http://bl.ocks.org/mbostock/3808221
+[heroku]: http://derbyjs.com/#deploy_to_heroku
