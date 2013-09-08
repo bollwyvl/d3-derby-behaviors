@@ -3,15 +3,20 @@
 
 <Header:>
   <header>
-    <ul>
-      <li>Add Circle <b>DBCLICK</b></li>
-      <li>Pan <b>DRAG</b></li>
-      <li>Zoom <b>WHEEL</b></li>
-      <li>Move <b style="color: red">DRAG</b></li>
-      <li>Destroy <b style="color: red">DBCLICK</b></li>
-    </ul>
+    <a href="http://d3js.com">d3</a> + <a href="http://derbyjs.com">Derby</a>: Behaviors with multiple Users
   </header>
 
 <Body:>
   <!-- This is a component defined in the /ui directory -->
   <ui:behaviors room={_page.room}>
+
+<Footer:>
+  <footer>
+    <ul>
+      <li>Add <b>DBCLICK</b></li>
+      <li>Pan <b>DRAG</b></li>
+      <li>Zoom <b>WHEEL</b></li>
+      <li>Move <b class="item">DRAG</b></li>
+      <li>Destroy <b class="item">DBCLICK</b></li>
+    </ul>
+  </footer>

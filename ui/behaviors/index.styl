@@ -1,3 +1,7 @@
+bg = #f6f0e1
+lines = #fddbce
+item = darken(lines, 60)
+
 .behaviors
   position absolute
   width 100%
@@ -9,16 +13,28 @@
     shape-rendering crispEdges
 
     rect
-      fill #ddd
+      fill bg
 
     .axis
       line, path
         fill none
-        stroke #fff
+        stroke lines
+      color lightgrey
     
-    .items
+    #items
       shape-rendering auto
+      
+      .item
+        fill item
 
-    circle
-      fill red
-      stroke black
+header
+  a
+    color item
+
+footer 
+  li
+    color lightgrey
+    b
+      color bg 
+    .item
+      color item
