@@ -1,10 +1,10 @@
 {
   "name": "derby-d3-behaviors",
-  "description": "",
-  "version": "0.0.0",
+  "description": "A sample application showing pan/zoom/drag with derby and d3",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/bollwyvl/derby-d3-behaviors.git"
   },
   "scripts": {
     "start": "node server.js"
