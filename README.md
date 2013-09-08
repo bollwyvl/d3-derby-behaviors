@@ -9,12 +9,22 @@ The visualization was ported from the [canonical zoom example](zoom), with
 some changes to handle being redrawn. A great introduction to this process can 
 be found in the [general update pattern][gup] tutorials.
 
+# Dependencies
+To appease derby and racer, you'll need redis and MongoDB installed. If they 
+are both available locally on default ports, this app will work pretty much out 
+of the box.
+
+All other dependencies are handled by `npm`. Note that the derby stack is under 
+active development at this point, and this repo is just a demo... so it might 
+break at any time.
+
 # Usage
 ~~~~bash
 npm install
 npm start
 ~~~~
-Navigate to http://localhost:3000/.
+
+Navigate to the [local development server](http://localhost:3000).
 
 # Limitations
 There is no authn/authz whatsoever on the app, nor is there any validation of 
